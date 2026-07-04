@@ -30,7 +30,7 @@ Market Scout → Data Fetcher → Market Analyst → Kronos → Kelly → Feedba
 - BTC directional accuracy: **61.8%** (direct_5min mode)
 - Consistent with state-of-the-art published research (LSTM models achieve 52-55% in peer-reviewed literature)
 - Fully free to run — $0 infrastructure cost
-- Demo Video : https://drive.google.com/file/d/1sROBmQRY_B3oAhSiSOxVXpE37Gu0sDAY/view?usp=sharing
+- 🚀 **Live Demo Video:** [Click here to view](https://drive.google.com/file/d/1sROBmQRY_B3oAhSiSOxVXpE37Gu0sDAY/view?usp=sharing)                                                                           
 
 ---
 

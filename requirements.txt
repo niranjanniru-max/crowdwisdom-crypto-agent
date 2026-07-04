@@ -1,0 +1,45 @@
+# ============================================================
+#  requirements.txt — CrowdWisdomTrading Crypto Prediction Agent
+#
+#  Install:  pip install -r requirements.txt
+#
+#  Notes:
+#  - torch is CPU-only (no CUDA needed); use the +cpu variant
+#    for a much smaller install (~200MB vs ~2GB for GPU builds)
+#  - Kronos model files (~150-400MB) are downloaded from HuggingFace
+#    Hub automatically on first run
+# ============================================================
+
+# --- Core HTTP & API ---
+requests>=2.32.3
+openai>=1.35.0
+apify-client>=1.7.1
+
+# --- Environment & Config ---
+python-dotenv>=1.0.1
+
+# --- Data Processing ---
+pandas>=2.2.2
+numpy>=1.26.4
+pandas-ta>=0.3.14b
+
+# --- Rich Terminal Output ---
+rich>=13.7.1
+
+# --- PyTorch (CPU-only) ---
+# Install command: pip install torch --index-url https://download.pytorch.org/whl/cpu
+# This is listed here for reference; the index-url must be specified manually.
+# See: https://pytorch.org/get-started/locally/
+torch>=2.3.0
+
+# --- HuggingFace Model Hub (for downloading Kronos weights) ---
+transformers>=4.41.2
+huggingface_hub>=0.23.4
+safetensors>=0.4.3
+
+# --- Kronos dependency (cloned from GitHub, not PyPI) ---
+# Kronos itself is cloned into kronos_src/ automatically at runtime.
+# Its own requirements (listed in kronos_src/requirements.txt) include:
+#   einops, rotary-embedding-torch, pandas, torch, transformers
+einops>=0.7.0
+rotary-embedding-torch>=0.6.5
